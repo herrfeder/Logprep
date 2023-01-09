@@ -16,6 +16,9 @@ Example
 """
 from functools import cached_property
 
+from attrs import define
+
+from logprep.abc.input import Input
 from logprep.connector.dummy.input import DummyInput
 from logprep.util.rawstring_handling import parse_rawstring
 
