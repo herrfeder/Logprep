@@ -13,6 +13,8 @@ from logprep.connector.http.input import HttpConnector
 from logprep.connector.json.input import JsonInput
 from logprep.connector.jsonl.input import JsonlInput
 from logprep.connector.jsonl.output import JsonlOutput
+from logprep.connector.rawstringl.input import RawstringlInput
+from logprep.connector.rawstringl.output import RawstringlOutput
 from logprep.connector.opensearch.output import OpensearchOutput
 from logprep.processor.calculator.processor import Calculator
 from logprep.processor.clusterer.processor import Clusterer
@@ -72,6 +74,7 @@ class Registry:
         # Connectors
         "json_input": JsonInput,
         "jsonl_input": JsonlInput,
+        "rawstringl_input": RawstringlInput,
         "dummy_input": DummyInput,
         "dummy_output": DummyOutput,
         "confluentkafka_input": ConfluentKafkaInput,
