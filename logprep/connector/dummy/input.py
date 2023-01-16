@@ -38,7 +38,7 @@ class DummyInput(Input):
         return self._config.documents
 
     def _get_event(self, timeout: float) -> tuple:
-        """Retriev next document from configuration and raise error if found"""
+        """Retrieve next document from configuration and raise error if found"""
         if not self._documents:
             raise SourceDisconnectedError
 
